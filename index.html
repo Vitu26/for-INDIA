@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oláááááááááááá</title>
+    <style>
+        p {
+        text-align: center;
+        font-size: 32px;
+        font-family: Candara, Oswald;
+        }
+        img {
+        display: block;
+        margin: 0 auto;
+        width: 25%;
+        }
+        .botao{
+             display: flex; 
+             flex-direction: row; 
+             justify-content: space-around; 
+        }
+        #botao1 {
+        position: fixed;
+        top: 69.5%;
+        left: 65%;
+        transform: translate(-50%, -50%);
+        }
+        #botao2 {
+        position: absolute;
+        left: 29%;
+        top: 68%;
+        }
+        @media (max-width: 660px){
+            img {
+                display: block;
+                margin: 0 auto;
+                width: 55%;
+            }
+            #botao1 {
+                position: absolute;
+                top: 69.5%;
+                left: 65%;
+                transform: translate(-50%, -50%);
+            }
+            #botao2 {
+                position: absolute;
+                left: 29%;
+                top: 68%;
+            }
+        }
+        @media(max-width: 770px){
+            img {
+                display: block;
+                margin: 0 auto;
+                width: 55%;
+            }
+        }
+
+        @media (max-width: 360px){
+            img {
+                display: block;
+                margin: 0 auto;
+                width: 55%;
+            }
+            #botao1 {
+                position: absolute;
+                top: 69.5%;
+                left: 65%;
+                transform: translate(-50%, -50%);
+            }
+            #botao2 {
+                position: absolute;
+                left: 29%;
+                top: 68%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <p>Você quer ficar comigo?</p>
+    <img src="https://media.tenor.com/zGm5acSjHCIAAAAM/cat-begging.gif">
+    
+        <button id="botao1">SIM BABY!</button>
+        <button id="botao2">NÃO</button>
+    
+    <script>
+        setInterval(function() {
+            let botao2 = document.getElementById('botao2');
+            let x = Math.random() * window.innerWidth;
+            let y = Math.random() * window.innerHeight;
+            botao2.style.left = x + 'px';
+            botao2.style.top = y + 'px';
+            }, 500);
+    </script>
+    <script>
+    document.getElementById('botao1').addEventListener('click', function() {
+        alert('YAYY VOCÊ É ÍNCRIVEL!');
+        });
+    </script>
+</body>
+</html>
